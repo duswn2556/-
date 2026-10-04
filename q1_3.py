@@ -4,7 +4,7 @@ q = deque()
 n,m=[int(x) for x in input('').split()]
 maze =[[int(x) for x in input('')] for _ in range(n)]
 
-dx = [1,-1,0,0]
+dx = [-1,1,0,0]
 dy= [0,0,-1,1]
 
 path = [[0] * m for _ in range(n)] #경로 기록 지도
