@@ -1,5 +1,5 @@
-n,m= [int(x) for x in input('').split()]
-heights=[int(x) for x in input('').split()]
+n,m= [int(x) for x in input('').split()] #떡 개수, 필요한 떡 길이
+heights=[int(x) for x in input('').split()] #떡 개별 높이
 
 start=0
 end=max(heights)
@@ -7,7 +7,7 @@ rslt=0
 
 while start<=end:
     total=0
-    mid = (start + end) // 2
+    mid = (start + end) // 2 #이진탐색
 
     for h in heights:
         if h > mid:
@@ -18,4 +18,5 @@ while start<=end:
     else:
        rslt = mid
        start=mid+1
-print(rslt)
+
+print(rslt) #절단기 높이의 최댓값
