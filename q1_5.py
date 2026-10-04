@@ -16,7 +16,7 @@ while start<=end:
     if total < m:
         end=mid-1
     else:
-       result = mid
+       rslt = mid
        start=mid+1
 
-print(result)
+print(rslt)
