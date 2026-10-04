@@ -1,5 +1,4 @@
-from collections import deque   
-q = deque()                    
+from collections import deque             
 
 n,m=[int(x) for x in input('').split()]
 maze =[[int(x) for x in input('')] for _ in range(n)]
