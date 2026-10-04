@@ -18,5 +18,4 @@ while start<=end:
     else:
        rslt = mid
        start=mid+1
-
 print(rslt)
