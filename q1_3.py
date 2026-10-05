@@ -9,7 +9,7 @@ dy= [0,0,-1,1]
 path = [[0] * m for _ in range(n)] #경로 기록 지도
 path[0][0] = 1 #시작칸도 1칸
 
-q = deque()
+q = deque() #선입선출, BFS
 q.append((0,0)) #출발 좌표
 while q:
     x, y = q.popleft()
