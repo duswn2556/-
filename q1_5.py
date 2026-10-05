@@ -5,9 +5,11 @@ start=0
 end=max(heights)
 rslt=0
 
+#이진탐색
+
 while start<=end:
     total=0 #잘린 떡들의 길이 합
-    mid = (start + end) // 2 #이진탐색
+    mid = (start + end) // 2 #이진탐색: 중간값 설정
 
     for h in heights:
         if h > mid:
