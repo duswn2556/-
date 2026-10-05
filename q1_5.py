@@ -6,7 +6,7 @@ end=max(heights)
 rslt=0
 
 while start<=end:
-    total=0
+    total=0 #잘린 떡들의 길이 합
     mid = (start + end) // 2 #이진탐색
 
     for h in heights:
